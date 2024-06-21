@@ -8,6 +8,14 @@ Detect driver behavior (drowsy driving or smartphone) by tracking eye movements.
 # Installation
 Clone this project:
 
-    git clone https://github.com/kms13601/Detecting-driver-behavior-with-eye-tracking.git
-    cd 
+    git clone https://github.com/kms13601/DriverGaze.git
+    cd DrivaerGaze
+    git clone https://github.com/antoinelame/GazeTracking.git
 
+# How to use
+main.py 에서 video_path, out을 수정해서 사용하세요
+
+In main.py, modify video_path, out to use
+
+    video_path = 'modify here'
+    out = cv2.VideoWriter('modify here', fourcc, cap.get(cv2.CAP_PROP_FPS), output_size)
