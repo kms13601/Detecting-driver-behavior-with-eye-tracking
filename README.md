@@ -7,4 +7,7 @@ Detect driver behavior (drowsy driving or smartphone) by tracking eye movements.
 
 # Installation
 Clone this project:
-git clone https://github.com/antoinelame/GazeTracking.git
+
+    git clone https://github.com/kms13601/Detecting-driver-behavior-with-eye-tracking.git
+    cd 
+
