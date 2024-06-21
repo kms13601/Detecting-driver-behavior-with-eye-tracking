@@ -10,7 +10,7 @@ gaze = GazeTracking()
 detector = dlib.get_frontal_face_detector()
 
 # 랜드마크 검출기 초기화
-sp_path = 'C:/Users/82107/Downloads/sp/shape_predictor_68_face_landmarks.dat'
+sp_path = 'shape_predictor_68_face_landmarks.dat'
 predictor = dlib.shape_predictor(sp_path)
 
 # 변수 설정
@@ -25,7 +25,7 @@ text = ""          # 출력되는 텍스트
 eye_open = True    # 눈을 떴는지 감았는지 체크
 
 # 비디오 캡처 객체 생성
-video_path = 'C:/Users/82107/Downloads/yooma.mp4'
+video_path = 'modify here'
 cap = cv2.VideoCapture(video_path)
 
 ret, frame = cap.read()
@@ -49,7 +49,7 @@ else:
 
 # 비디오 저장을 위한 초기화
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-out = cv2.VideoWriter('C:/Users/82107/Desktop/result.avi', fourcc, cap.get(cv2.CAP_PROP_FPS), output_size)
+out = cv2.VideoWriter('modify here', fourcc, cap.get(cv2.CAP_PROP_FPS), output_size)
 
 while True:
     ret, frame = cap.read()
